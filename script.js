@@ -69,7 +69,7 @@ function playGame()
 
         console.log(`${statement}\n${finalResult}\nComputer score: ${computerScore} Your score: ${humanScore}\n`);
         }
-        while(rounds <= 5) {
+        while(rounds < 5) {
             playRound();
             rounds++;
         }
@@ -84,6 +84,9 @@ function playGame()
 
     console.log(`Game over! ${winner}`);
 }
-playGame();
+setTimeout(() => {
+    playGame();
+}, 10000);
+alert("Open devtools and go to console! Game starts in 10 seconds")
 
 
