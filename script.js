@@ -21,51 +21,6 @@ function getHumanChoice() {
 }
 
 
-    function playRound(humanChoice, computerChoice) {
-        humanChoice = getHumanChoice();
-        computerChoice = getComputerChoice();
-
-        const statement = `Computer picked ${computerChoice}, human picked ${humanChoice}.`;
-        let finalResult;
-        
-        if(humanChoice == "Rock") {
-            if(computerChoice == "Rock") {
-                finalResult = "It's a tie!";
-            } else if(computerChoice == "Paper") {
-                finalResult = "You lose! Paper beats Rock!";
-                computerScore++;
-            } else {
-                finalResult = "You win! Rock beats Scissors!";
-                humanScore++;
-            }
-
-        } else if(humanChoice == "Scissors") {
-            if(computerChoice == "Rock") {
-                finalResult = "You lose! Rock beats Scissors!";
-                computerScore++;
-            } else if(computerChoice == "Paper") {
-                finalResult = "You win! Scissors beats Rock!";
-                humanScore++;
-            } else {
-                finalResult = "It's a tie!";
-            }
-
-        } else {
-            if(computerChoice == "Rock") {
-                finalResult = "You win! Paper beats Rock";
-                humanScore++;
-            } else if(computerChoice == "Paper") {
-                finalResult = "It's a tie!";
-            } else {
-                finalResult = "You lose! Scissors beats Rock!";
-                computerScore++;
-            }
-        }
-
-        console.log(`${statement}\n${finalResult}\nComputer score: ${computerScore} Your score: ${humanScore}`);
-    }
-
-
 function playGame() 
 {
     let humanScore = 0;
