@@ -83,10 +83,11 @@ function playGame()
     }
 
     console.log(`Game over! ${winner}`);
+    alert(`Game over! ${winner}`)
 }
 setTimeout(() => {
     playGame();
 }, 10000);
-alert("Open devtools and go to console! Game starts in 10 seconds")
+alert("Open devtools and go to console! If you are on mobile don't worry about it! Game starts in 10 seconds")
 
 
