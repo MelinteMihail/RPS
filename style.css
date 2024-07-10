@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: red;
+    width: 1800px;
+    height: 900px;
+    display: flex;
+}
+
+.box {
+    border: 5px solid black;
+    border-right: 2.5px solid black; 
+}
+
+.box2 {
+    width: 900px;
+    height: 100%;
+}
+
+.box1,
+.box3 {
+    width: 450px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 i,
+.box3 i {
+    color: white;
+    font-size: 200px;
+}
+
+.box1 h1,
+.box3 h1 {
+    margin-top: auto;
+    margin-bottom: 100px;
+    font-size: 40px;
+    color: white;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button-container {
+    background-color: blue;
+    width: 80%;
+    height: 30%;
+    
+}
