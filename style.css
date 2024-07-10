@@ -16,8 +16,9 @@ body {
 }
 
 .container {
-    background-color: red;
-    width: 1800px;
+    background-color: gray;
+    width: 100%;
+    max-width: 1800px;
     height: 900px;
     display: flex;
 }
@@ -40,6 +41,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-width: 300px;
+    flex: 1 1 30%;
 }
 
 .icon-container {
@@ -75,5 +78,78 @@ body {
     background-color: blue;
     width: 80%;
     height: 30%;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+    border-radius: 15px;
+    border: none;
+    box-shadow: -8px -7px 8px -3px rgba(0,0,0,1);   
 }
+
+.choice-button {
+    width: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgb(171,32,253);
+    color: rgb(207, 255, 4);
+}
+
+.choice-button i {
+    font-size: 60px;
+}
+
+.current-score {
+    background-color: yellow;
+    display: flex;
+    width: 72%;
+    height: 15%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.user-score,
+.computer-score {
+    text-align: center;
+}
+
+.computer-score{
+    width: 36%;
+}
+
+.winner-sect {
+    background-color: orange;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice h1 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+/* @media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .box {
+        width:100%;
+    }
+} */
