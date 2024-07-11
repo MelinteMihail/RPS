@@ -13,19 +13,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(38, 53, 93);
 }
 
 .container {
-    background-color: gray;
     width: 100%;
     max-width: 1800px;
     height: 900px;
     display: flex;
 }
 
-.box {
-    border: 5px solid black;
-    border-right: 2.5px solid black; 
+
+.box1 {
+    border-right: 1.8px solid rgb(32, 32, 32);
+}
+
+.box3 {
+    border-left: 1.8px solid rgb(32, 32, 32);
 }
 
 .box2 {
@@ -75,7 +79,7 @@ body {
 }
 
 .button-container {
-    background-color: blue;
+    background-color: rgb(73, 16, 139);
     width: 80%;
     height: 30%;
     display: flex;
@@ -105,13 +109,14 @@ body {
 }
 
 .current-score {
-    background-color: yellow;
+    background-color: rgb(51, 47, 208);
     display: flex;
     width: 72%;
     height: 15%;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
+    color: #fff;
 }
 
 .user-score,
@@ -124,7 +129,7 @@ body {
 }
 
 .winner-sect {
-    background-color: orange;
+    background-color: rgb(152, 0, 255);
     height: 15%;
     display: flex;
     flex-direction: column;
@@ -132,6 +137,7 @@ body {
     align-items: center;
     padding: 0 20px;
     border-radius: 20px;
+    color: #fff;
 }
 
 .choice {
